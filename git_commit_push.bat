@@ -50,6 +50,15 @@ if not errorlevel 1 (
   exit /b 0
 )
 
+echo.
+echo [INFO] Changes to be committed:
+git diff --cached --name-status
+if errorlevel 1 (
+  echo [ERROR] Failed to read staged change list.
+  exit /b 1
+)
+echo.
+
 echo [INFO] Committing with message: "%COMMIT_MSG%"
 git commit -m "%COMMIT_MSG%"
 if errorlevel 1 (
