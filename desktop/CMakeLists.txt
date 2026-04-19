@@ -1,4 +1,4 @@
-# LibreSprite Desktop Integration Module
+# AsnySprite Desktop Integration Module
 # Copyright (C) 2016  Gabriel Rauter
 # Copyright (C) 2016  David Capello
 # Copyright (C) 2016  Matthias Mailänder

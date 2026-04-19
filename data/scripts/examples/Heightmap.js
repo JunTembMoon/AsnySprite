@@ -1,5 +1,5 @@
-// LibreSprite
-// Copyright (C) 2024 LibreSprite contributors
+// AsnySprite
+// Copyright (C) 2024 AsnySprite contributors
 
 var dialog, intSeed;
 

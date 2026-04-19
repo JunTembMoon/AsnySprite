@@ -1,5 +1,5 @@
 // Aseprite    | Copyright (C) 2001-2016  David Capello
-// LibreSprite | Copyright (C) 2018       LibreSprite contributors
+// AsnySprite | Copyright (C) 2018       AsnySprite contributors
 //
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License version 2 as
@@ -41,7 +41,7 @@ ConfigModule::ConfigModule()
   ResourceFinder rf;
   rf.includeUserDir("libresprite.ini");
 
-  // getFirstOrCreateDefault() will create the LibreSprite directory
+  // getFirstOrCreateDefault() will create the AsnySprite directory
   // inside the OS configuration folder (~/.config/libresprite/, etc.).
   std::string fn = rf.getFirstOrCreateDefault();
 

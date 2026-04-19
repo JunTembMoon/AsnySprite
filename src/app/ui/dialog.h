@@ -1,5 +1,5 @@
-// LibreSprite
-// Copyright (C) 2023 LibreSprite contributors
+// AsnySprite
+// Copyright (C) 2023 AsnySprite contributors
 //
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License version 2 as
@@ -52,7 +52,7 @@ public:
     if (m_grid)
       return;
 
-    // LibreSprite has closed the window, remove corresponding ScriptObject (this)
+    // AsnySprite has closed the window, remove corresponding ScriptObject (this)
     Close.connect([this](ui::CloseEvent&){closeWindow(true, false);});
 
     if (m_grid) {

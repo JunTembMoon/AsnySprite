@@ -1,5 +1,5 @@
 // Aseprite    - Copyright (C) 2001-2016  David Capello
-// LibreSprite - Copyright (C) 2018-2021  LibreSprite contributors
+// AsnySprite - Copyright (C) 2018-2021  AsnySprite contributors
 //
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License version 2 as
@@ -643,7 +643,7 @@ void App::run()
   // Run the GUI
   if (isGui()) {
 #if _DEBUG
-    // On OS X, when we compile LibreSprite on Debug mode, we're using it
+    // On OS X, when we compile AsnySprite on Debug mode, we're using it
     // outside an app bundle, so we must active the app explicitly.
     she::instance()->activateApp();
 #endif
@@ -695,13 +695,13 @@ void App::run()
   m_modules->deleteDataRecovery();
 }
 
-// Finishes the LibreSprite application.
+// Finishes the AsnySprite application.
 App::~App()
 {
   try {
     ASSERT(m_instance == this);
 
-    // Remove LibreSprite handlers
+    // Remove AsnySprite handlers
     LOG("ASE: Uninstalling\n");
 
     // Delete file formats.

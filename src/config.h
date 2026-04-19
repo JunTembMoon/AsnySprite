@@ -1,5 +1,5 @@
 // Aseprite    | Copyright (C) 2001-2016  David Capello
-// LibreSprite | Copyright (C) 2018-2021  LibreSprite contributors
+// AsnySprite | Copyright (C) 2018-2021  AsnySprite contributors
 //
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License version 2 as
@@ -23,14 +23,14 @@
 #endif
 
 // General information
-#define PACKAGE "LibreSprite"
+#define PACKAGE "AsnySprite"
 #define VERSION "1.2-dev"
 #define PACKAGE_AND_VERSION PACKAGE " " VERSION
 
-#define WEBSITE                 "https://github.com/LibreSprite/LibreSprite/"
+#define WEBSITE                 "https://github.com/AsnySprite/AsnySprite/"
 #define WEBSITE_DOWNLOAD        WEBSITE "releases/"
 #define WEBSITE_CONTRIBUTORS    WEBSITE "graphs/contributors/"
-#define COPYRIGHT               "Copyright (C) 2001-2016 David Capello, 2016-2024 LibreSprite contributors"
+#define COPYRIGHT               "Copyright (C) 2001-2016 David Capello, 2016-2024 AsnySprite contributors"
 
 #include "base/base.h"
 #include "base/debug.h"

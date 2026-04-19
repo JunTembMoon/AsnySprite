@@ -3,10 +3,10 @@
 	<id>io.github.libresprite.libresprite</id>
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-2.0</project_license>
-	<name>LibreSprite</name>
+	<name>AsnySprite</name>
 	<summary>Animated sprite editor and pixel art tool</summary>
 	<description>
-		<p>LibreSprite lets you create 2D animations for videogames. From sprites, to pixel-art, retro style graphics, and whatever you like about the 8-bit (and 16-bit) era.</p>
+		<p>AsnySprite lets you create 2D animations for videogames. From sprites, to pixel-art, retro style graphics, and whatever you like about the 8-bit (and 16-bit) era.</p>
 		<p>It offers the following features:</p>
 		<ul>
 		<li>Real-time animation previews</li>
@@ -20,9 +20,9 @@
 		</ul>
 	</description>
 	<url type="homepage">https://libresprite.github.io</url>
-	<url type="bugtracker">https://github.com/LibreSprite/LibreSprite/issues/</url>
-	<url type="vcs-browser">https://github.com/LibreSprite/LibreSprite/</url>
-	<url type="contribute">https://github.com/LibreSprite/LibreSprite/blob/master/CONTRIBUTING.md</url>
+	<url type="bugtracker">https://github.com/AsnySprite/AsnySprite/issues/</url>
+	<url type="vcs-browser">https://github.com/AsnySprite/AsnySprite/</url>
+	<url type="contribute">https://github.com/AsnySprite/AsnySprite/blob/master/CONTRIBUTING.md</url>
 	<launchable type="desktop-id">libresprite.desktop</launchable>
 	<releases>
 		<release date="2021-11-17" version="1.1-dev" />
@@ -42,7 +42,7 @@
 	</keywords>
 	<screenshots>
 		<screenshot type="default">
-			<image>https://raw.githubusercontent.com/LibreSprite/LibreSprite/master/desktop/screenshot.png</image>
+			<image>https://raw.githubusercontent.com/AsnySprite/AsnySprite/master/desktop/screenshot.png</image>
 			<caption>The canvas</caption>
 		</screenshot>
 	</screenshots>

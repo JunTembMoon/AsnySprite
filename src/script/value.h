@@ -1,5 +1,5 @@
-// LibreSprite Scripting Library
-// Copyright (c) 2021 LibreSprite contributors
+// AsnySprite Scripting Library
+// Copyright (c) 2021 AsnySprite contributors
 //
 // This file is released under the terms of the MIT license.
 // Read LICENSE.txt for more information.

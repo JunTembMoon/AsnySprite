@@ -254,7 +254,7 @@ public:
       if (!m_scaleWarningShown) {
           m_scaleWarningShown = true;
           ui::Alert::show(PACKAGE
-                          "<<Restart LibreSprite to apply this change"
+                          "<<Restart AsnySprite to apply this change"
                           "||&OK");
       }
     }

@@ -1,5 +1,5 @@
 # Aseprite     | Copyright (C) 2001-2016  David Capello
-# LibreSprite  | Copyright (C)      2021  LibreSprite contributors
+# AsnySprite  | Copyright (C)      2021  AsnySprite contributors
 
 ######################################################################
 # Common definitions for all Aseprite libraries/projects

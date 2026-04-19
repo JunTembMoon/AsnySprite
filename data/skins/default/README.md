@@ -2,13 +2,13 @@
 # Neutral Dark
 by BlackRaven#7273(Discord)
 
-*A Dark Theme for LibreSprite based in than_dark_theme_libresprite theme Made by @Maujin111 for LibreSprite
+*A Dark Theme for AsnySprite based in than_dark_theme_libresprite theme Made by @Maujin111 for AsnySprite
 
 ## Installation
 ### 1. Download the zip file or clone the repository
 
 ### 2. Put it in your skin folder
-Open LibreSprite.
+Open AsnySprite.
 
 Go to *Edit/Preferences/Theme*, you can see there are 2 paths at the top of the *Available Themes* list.
 

@@ -1,6 +1,6 @@
-// LibreSprite
+// AsnySprite
 // Copyright (C) 2001-2015  David Capello
-// Copyright (c) 2024 LibreSprite contributors
+// Copyright (c) 2024 AsnySprite contributors
 //
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License version 2 as

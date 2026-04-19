@@ -36,20 +36,16 @@ if errorlevel 1 (
   exit /b 1
 )
 
+echo.
+echo [INFO] Files changed (status):
+git status --short
+echo.
+
 git diff --cached --quiet
 if not errorlevel 1 (
   echo [INFO] No staged changes to commit. Commit step will be skipped.
   goto PUSH_STEP
 )
-
-echo.
-echo [INFO] Changes to be committed:
-git diff --cached --name-status
-if errorlevel 1 (
-  echo [ERROR] Failed to read staged change list.
-  exit /b 1
-)
-echo.
 
 if "%COMMIT_MSG%"=="" (
   set /p COMMIT_MSG=Commit message: 

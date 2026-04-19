@@ -1,5 +1,5 @@
 <!-- Aseprite    | Copyright (C) 2014-2016  David Capello -->
-<!-- LibreSprite | Copyright (C) 2018       LibreSprite contributors -->
+<!-- AsnySprite | Copyright (C) 2018       AsnySprite contributors -->
 <gui>
 <window text="Crash Report" id="send_crash">
   <vbox>
@@ -8,7 +8,7 @@
       <label text="Please attach the following file:" />
       <link id="filename" text="" url="" />
       <label text="to a bug report on:" />
-      <entry readonly="true" text="https://github.com/LibreSprite/LibreSprite/issues" maxsize="256" />
+      <entry readonly="true" text="https://github.com/AsnySprite/AsnySprite/issues" maxsize="256" />
       <label text="explaining what you was doing when the program crashed." />
     </vbox>
 

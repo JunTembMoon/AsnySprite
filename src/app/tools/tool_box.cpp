@@ -1,5 +1,5 @@
 // Aseprite    - Copyright (C) 2001-2015  David Capello
-// LibreSprite - Copyright (C) 2021       LibreSprite contributors
+// AsnySprite - Copyright (C) 2021       AsnySprite contributors
 //
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License version 2 as
@@ -177,7 +177,7 @@ PointShape* ToolBox::getPointShapeById(const std::string& id)
 
 void ToolBox::loadTools()
 {
-  LOG("Loading LibreSprite tools\n");
+  LOG("Loading AsnySprite tools\n");
 
   XmlDocumentRef doc(GuiXml::instance()->doc());
   tinyxml2::XMLHandle handle(doc.get());

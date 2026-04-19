@@ -1,4 +1,4 @@
-// LibreSprite | Copyright (C)      2024  LibreSprite contributors
+// AsnySprite | Copyright (C)      2024  AsnySprite contributors
 //
 // This file is released under the terms of the MIT license.
 // Read LICENSE.txt for more information.

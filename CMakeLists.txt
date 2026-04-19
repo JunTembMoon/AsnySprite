@@ -1,5 +1,5 @@
 # Aseprite     | Copyright (C) 2001-2016  David Capello
-# LibreSprite  | Copyright (C)      2022  LibreSprite contributors
+# AsnySprite  | Copyright (C)      2022  AsnySprite contributors
 
 cmake_minimum_required(VERSION 4.1)
 
@@ -16,7 +16,7 @@ endif()
 # Note: This needs to be done before the project command
 set(CMAKE_CONFIGURATION_TYPES "${CMAKE_BUILD_TYPE}" CACHE INTERNAL "internal")
 
-# LibreSprite project
+# AsnySprite project
 project(libresprite C CXX)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)

@@ -1,5 +1,5 @@
 // Aseprite    | Copyright (C) 2001-2016  David Capello
-// LibreSprite | Copyright (C)      2021  LibreSprite contributors
+// AsnySprite | Copyright (C)      2021  AsnySprite contributors
 //
 // This file is released under the terms of the MIT license.
 // Read LICENSE.txt for more information.
@@ -45,7 +45,7 @@ namespace ui {
   class Theme;
   class Window;
 
-  /* Widgets are the basic visual object in LibreSprite, such as menus and grids.
+  /* Widgets are the basic visual object in AsnySprite, such as menus and grids.
 
   Widgets are non-copyable */
   class Widget : public WithHandle<Widget> {

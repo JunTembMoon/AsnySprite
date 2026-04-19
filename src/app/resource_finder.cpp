@@ -1,5 +1,5 @@
 // Aseprite    | Copyright (C) 2001-2016  David Capello
-// LibreSprite | Copyright (C) 2018-2022  LibreSprite contributors
+// AsnySprite | Copyright (C) 2018-2022  AsnySprite contributors
 //
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License version 2 as
@@ -90,13 +90,13 @@ void ResourceFinder::includeDataDir(const char* filename)
 #ifdef _WIN32
 
   snprintf(buf, sizeof(buf), "data/%s", filename);
-  includeHomeDir(buf); // %AppData%/LibreSprite/data/filename
+  includeHomeDir(buf); // %AppData%/AsnySprite/data/filename
   includeBinDir(buf);  // $BINDIR/data/filename
 
 #elif __APPLE__
 
   snprintf(buf, sizeof(buf), "data/%s", filename);
-  includeUserDir(buf); // $HOME/Library/Application Support/LibreSprite/data/filename
+  includeUserDir(buf); // $HOME/Library/Application Support/AsnySprite/data/filename
   includeBinDir(buf);  // $BINDIR/data/filename (outside the bundle)
 
   snprintf(buf, sizeof(buf), "../Resources/data/%s", filename);
@@ -134,10 +134,10 @@ void ResourceFinder::includeHomeDir(const char* filename)
 {
 #ifdef _WIN32
 
-  // %AppData%/LibreSprite/filename
+  // %AppData%/AsnySprite/filename
   wchar_t* env = _wgetenv(L"AppData");
   if (env) {
-    std::string path = base::join_path(base::to_utf8(env), "LibreSprite");
+    std::string path = base::join_path(base::to_utf8(env), "AsnySprite");
     path = base::join_path(path, filename);
     addPath(path);
     m_default = path;
@@ -170,13 +170,13 @@ void ResourceFinder::includeUserDir(const char* filename)
     includeBinDir(filename);
   }
   else {
-    // %AppData%/LibreSprite/filename
+    // %AppData%/AsnySprite/filename
     includeHomeDir(filename);
   }
 
 #elif __APPLE__
 
-  // $HOME/Library/Application Support/LibreSprite/filename
+  // $HOME/Library/Application Support/AsnySprite/filename
   addPath(
     base::join_path(
       base::join_path(base::get_lib_app_support_path(), PACKAGE),

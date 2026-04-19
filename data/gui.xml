@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Aseprite    | Copyright (C) 2001-2016  David Capello -->
-<!-- LibreSprite | Copyright (C) 2017-2025  LibreSprite contributors -->
+<!-- AsnySprite | Copyright (C) 2017-2025  AsnySprite contributors -->
 <gui version="1.2-dev">
   <!-- Keyboard shortcuts -->
   <keyboard version="1">
@@ -793,20 +793,20 @@
       <menu text="&amp;Help">
         <item command="Launch" text="Readme">
           <param name="type" value="url" />
-          <param name="path" value="https://github.com/LibreSprite/LibreSprite#readme" />
+          <param name="path" value="https://github.com/AsnySprite/AsnySprite#readme" />
         </item>
         <separator />
         <item command="Launch" text="Quick &amp;Reference">
           <param name="type" value="url" />
-          <param name="path" value="https://github.com/LibreSprite/libresprite.github.io/wiki/Know-your-workspace" />
+          <param name="path" value="https://github.com/AsnySprite/libresprite.github.io/wiki/Know-your-workspace" />
         </item>
         <item command="Launch" text="Documentation">
           <param name="type" value="url" />
-          <param name="path" value="https://github.com/LibreSprite/libresprite.github.io/wiki" />
+          <param name="path" value="https://github.com/AsnySprite/libresprite.github.io/wiki" />
         </item>
         <item command="Launch" text="Tutorial">
           <param name="type" value="url" />
-          <param name="path" value="https://github.com/LibreSprite/libresprite.github.io/wiki" />
+          <param name="path" value="https://github.com/AsnySprite/libresprite.github.io/wiki" />
         </item>
         <separator />
         <item command="Launch" text="Release Notes">
@@ -816,7 +816,7 @@
         <separator />
         <item command="Launch" text="&amp;Donate">
           <param name="type" value="url" />
-          <param name="path" value="https://liberapay.com/LibreSprite" />
+          <param name="path" value="https://liberapay.com/AsnySprite" />
         </item>
         <item command="About" text="&amp;About" />
       </menu>

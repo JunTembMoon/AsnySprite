@@ -44,7 +44,7 @@ jobs:
 
     - name: Download & Lint Info.plist
       run: |
-        curl -L https://raw.githubusercontent.com/LibreSprite/LibreSprite/master/desktop/Info.plist --output desktop/Info.plist
+        curl -L https://raw.githubusercontent.com/AsnySprite/AsnySprite/master/desktop/Info.plist --output desktop/Info.plist
         plutil desktop/Info.plist
 
     - name: Generate Makefiles
@@ -171,7 +171,7 @@ jobs:
         # Clean up
         rm ./bundle_entitlements.plist ./sign_component.sh
         
-        hdiutil create -volname "LibreSprite" -srcfolder bundle -ov -format UDZO "libresprite.dmg"
+        hdiutil create -volname "AsnySprite" -srcfolder bundle -ov -format UDZO "libresprite.dmg"
 
     - name: Upload Artifacts
       uses: actions/upload-artifact@v4

@@ -4,21 +4,21 @@
 Contributing code is very easy to do once you get the hang of it. We use GitHub for our online repository and issue tracker, so you'll need an account first. After you've done that and are comfortable with how the platform and git itself works, read on.
 
 ### Set Up Your Repository
-1. Fork [LibreSprite](https://github.com/LibreSprite/LibreSprite) so you have a personal repository to push to.
-2. Clone your personal repository with `git clone --recursive https://github.com/YOUR-USERNAME/LibreSprite`. Remember to change the URL to your repository's. The `--recursive` is used to download the third party libraries for building.
-3. Move into the directory, on Linux this is done with `cd LibreSprite`.
+1. Fork [AsnySprite](https://github.com/AsnySprite/AsnySprite) so you have a personal repository to push to.
+2. Clone your personal repository with `git clone --recursive https://github.com/YOUR-USERNAME/AsnySprite`. Remember to change the URL to your repository's. The `--recursive` is used to download the third party libraries for building.
+3. Move into the directory, on Linux this is done with `cd AsnySprite`.
 4. Follow the [instructions](INSTALL.md) to create a build and make sure your local copy is working.
-5. Add an upstream remote so you can get other developer's updates with `git remote add upstream https://github.com/LibreSprite/LibreSprite`.
+5. Add an upstream remote so you can get other developer's updates with `git remote add upstream https://github.com/AsnySprite/AsnySprite`.
 
 ### Updating Your Repository
 These instructions will update both your local repository and online fork.
-1. `git fetch upstream` Will download any new changes from the official LibreSprite repository.
+1. `git fetch upstream` Will download any new changes from the official AsnySprite repository.
 2. `git checkout master` Will switch to your master branch.
 3. `git merge upstream/master` Will merge or fast-forward your local master branch so it contains all the updates.
 4. `git push origin master` Will update your online repository's master branch, it's a good idea to keep it up to date.
 
 ### Making Changes
-To make a contribution you will need to make a feature branch. This greatly simplifies adding your code to the official repository, and it ensures the master branch is always working. As a heads up, it's best to let us know what you're working on by commenting on or creating an [issue](https://github.com/LibreSprite/LibreSprite/issues), this way we all save time by working on different things.
+To make a contribution you will need to make a feature branch. This greatly simplifies adding your code to the official repository, and it ensures the master branch is always working. As a heads up, it's best to let us know what you're working on by commenting on or creating an [issue](https://github.com/AsnySprite/AsnySprite/issues), this way we all save time by working on different things.
 1. Call `git checkout master`, always make sure you are on master before making a feature branch.
 2. Call `git checkout -b name-of-your-feature` This will create a feature branch and switch to it. Try to be specific in your feature name, this helps track it down in the future if we need to.
 3. Make a meaningful change, you don't want to implement the whole feature in one shot generally. Try to break your task into meaningful (and revertible) chunks, though sometimes one chunk is all it takes like with small bug fixes.

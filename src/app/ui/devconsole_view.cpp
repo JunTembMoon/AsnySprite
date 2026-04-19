@@ -1,5 +1,5 @@
 // Aseprite    | Copyright (C) 2001-2016  David Capello
-// LibreSprite | Copyright (C) 2021       LibreSprite contributors
+// AsnySprite | Copyright (C) 2021       AsnySprite contributors
 //
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License version 2 as
@@ -61,7 +61,7 @@ protected:
 
 DevConsoleView::DevConsoleView()
   : Box(VERTICAL)
-  , m_textBox("Welcome to LibreSprite Scripting Console\n(Experimental)", LEFT)
+  , m_textBox("Welcome to AsnySprite Scripting Console\n(Experimental)", LEFT)
   , m_label(">")
   , m_entry(new CommmandEntry)
 {

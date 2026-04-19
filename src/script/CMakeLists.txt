@@ -1,6 +1,6 @@
-# LibreSprite Scripting Library
+# AsnySprite Scripting Library
 # Aseprite     | Copyright (C) 2001-2016  David Capello
-# LibreSprite  | Copyright (C)      2021  LibreSprite contributors
+# AsnySprite  | Copyright (C)      2021  AsnySprite contributors
 
 include_directories(${DUKTAPE_DIR})
 include_directories(${QUICKJS_DIR})

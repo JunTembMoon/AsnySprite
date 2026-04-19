@@ -1,6 +1,6 @@
 // Aseprite Document Library
 // Copyright (c) 2001-2015 David Capello
-// LibreSprite - Copyright (C) 2023  LibreSprite contributors
+// AsnySprite - Copyright (C) 2023  AsnySprite contributors
 //
 // This file is released under the terms of the MIT license.
 // Read LICENSE.txt for more information.

@@ -1,5 +1,5 @@
 // Aseprite    | Copyright (C) 2001-2013, 2015  David Capello
-// LibreSprite | Copyright (C) 2021  LibreSprite contributors
+// AsnySprite | Copyright (C) 2021  AsnySprite contributors
 //
 // This file is released under the terms of the MIT license.
 // Read LICENSE.txt for more information.

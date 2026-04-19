@@ -1,4 +1,4 @@
-# LibreSprite Desktop Integration Module
+# AsnySprite Desktop Integration Module
 # Copyright (C) 2016  Gabriel Rauter
 #
 # Licensed under the the MIT License (https://opensource.org/licenses/MIT).
