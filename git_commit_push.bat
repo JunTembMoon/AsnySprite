@@ -18,14 +18,6 @@ if errorlevel 1 (
 )
 
 set "COMMIT_MSG=%~1"
-if "%COMMIT_MSG%"=="" (
-  set /p COMMIT_MSG=Commit message: 
-)
-
-if "%COMMIT_MSG%"=="" (
-  echo [ERROR] Commit message is required.
-  exit /b 1
-)
 
 set "BRANCH=%~2"
 if "%BRANCH%"=="" (
@@ -46,8 +38,8 @@ if errorlevel 1 (
 
 git diff --cached --quiet
 if not errorlevel 1 (
-  echo [INFO] No staged changes to commit.
-  exit /b 0
+  echo [INFO] No staged changes to commit. Commit step will be skipped.
+  goto PUSH_STEP
 )
 
 echo.
@@ -59,6 +51,15 @@ if errorlevel 1 (
 )
 echo.
 
+if "%COMMIT_MSG%"=="" (
+  set /p COMMIT_MSG=Commit message: 
+)
+
+if "%COMMIT_MSG%"=="" (
+  echo [ERROR] Commit message is required.
+  exit /b 1
+)
+
 echo [INFO] Committing with message: "%COMMIT_MSG%"
 git commit -m "%COMMIT_MSG%"
 if errorlevel 1 (
@@ -66,11 +67,32 @@ if errorlevel 1 (
   exit /b 1
 )
 
+:PUSH_STEP
 echo [INFO] Pushing to origin/%BRANCH%...
 git push origin "%BRANCH%"
 if errorlevel 1 (
-  echo [ERROR] git push failed.
-  exit /b 1
+  echo [WARN] Initial push failed. Trying to sync with remote and retry...
+
+  git fetch origin "%BRANCH%"
+  if errorlevel 1 (
+    echo [ERROR] git fetch failed.
+    exit /b 1
+  )
+
+  git rebase "origin/%BRANCH%"
+  if errorlevel 1 (
+    echo [ERROR] Rebase failed. Resolve conflicts manually, then run:
+    echo         git rebase --continue
+    echo         git push origin "%BRANCH%"
+    exit /b 1
+  )
+
+  echo [INFO] Retry push to origin/%BRANCH%...
+  git push origin "%BRANCH%"
+  if errorlevel 1 (
+    echo [ERROR] git push failed after retry.
+    exit /b 1
+  )
 )
 
 echo [DONE] Commit and push completed successfully.
